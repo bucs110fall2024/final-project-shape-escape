@@ -1,12 +1,15 @@
-class Bullet:
-  def __init__(self, x, y, img_file):
-      self.score = 0
-      self.sqr.x = x
-      self.sqr.y = y
+import pygame
+import Game
+import sys
+import random
 
+pygame.init()
 
-  def move_right(self):
-     self.sqr.x += 1
+class Bullet(pygame.sprite.Sprite):
+      def __init__(self, img="assets/bullet.png"):
+        super().__init__()
 
-  def move_left(self):
-      self.sqr.x -=1
+        self.image = pygame.image.load(img)
+        self.rect = self.image.get_rect()
+        self.rect.x = random.randrange
+        self.rect.y = random.randrange
