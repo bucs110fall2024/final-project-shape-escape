@@ -10,3 +10,9 @@ class Bullet:
 
   def move_left(self):
       self.sqr.x -=1
+
+  def move_up(self):
+     self.sqr.x += 1
+
+  def move_down(self):
+      self.sqr.x -=1

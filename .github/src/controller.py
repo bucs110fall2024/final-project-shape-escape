@@ -1,7 +1,7 @@
 import pygame
 import Triangle
 import Square
-import Game
+import game_menu
 import Bullet
 
 def mainloop(self):

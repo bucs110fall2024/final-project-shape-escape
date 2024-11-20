@@ -24,6 +24,12 @@ class Triangle(pygame.sprite.Sprite):
       def left(self, distance=5):
             self.rect.x -= distance
 
+      def up(self, distance=5):
+            self.rect.x += distance
+            
+      def down(self, distance=5):
+            self.rect.x -= distance
+
       def update(self):
         if self.rect.x > width:
             self.rect.x = -50  
