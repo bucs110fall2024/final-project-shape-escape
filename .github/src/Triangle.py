@@ -1,6 +1,6 @@
 import pygame
 import sys
-import Game
+from src.Game import Game
 
 pygame.init()
 

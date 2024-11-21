@@ -1,8 +1,8 @@
 import pygame
-from Triangle import Triangle
-from Square import Square
-from Game import Game
-from Bullet import Bullet
+from src.Triangle import Triangle
+from src.Square import Square
+from src.Game import Game
+from src.Bullet import Bullet
 
 class Controller:
     def __init__(self):

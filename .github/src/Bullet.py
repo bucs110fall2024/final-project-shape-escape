@@ -1,5 +1,5 @@
 import pygame
-import Game
+from src.Game import Game
 import sys
 import random
 
