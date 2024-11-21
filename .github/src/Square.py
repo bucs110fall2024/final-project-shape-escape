@@ -14,11 +14,11 @@ class Square(pygame.sprite.Sprite):
         self.rect.x = x
         self.rect.y = y
       
-      def getx():
-          return x
+      def getx(self):
+          return self.rect.x
       
-      def gety():
-          return y
+      def gety(self):
+          return self.rect.y
 
 
       
