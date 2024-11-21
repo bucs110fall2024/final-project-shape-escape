@@ -1,11 +1,12 @@
 import pygame
-from src.Triangle import Triangle
+from src.Player import Triangle
 from src.Square import Square
 from src.Game import Game
 from src.Bullet import Bullet
 
 class Controller:
     def __init__(self):
+        
         pygame.init()
         pygame.event.pump()
 
@@ -14,6 +15,15 @@ class Controller:
         triangle = Triangle(0,0)
 
     def mainloop(self):
+        """
+        runs the game
+
+        Args:
+        which key is pressed making the triangle move in that direction
+
+        Returns: 
+        the new position of the triangle
+        """
         while(True): 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
