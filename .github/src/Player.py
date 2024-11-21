@@ -1,10 +1,8 @@
 import pygame
 import sys
-from src.Game import Game
+import game_menu
 
 pygame.init()
-
-width, height = 800, 600
 
 class Triangle(pygame.sprite.Sprite):
       def __init__(self, x, y, img="assets/triangle.png"):
@@ -29,13 +27,13 @@ class Triangle(pygame.sprite.Sprite):
             self.rect.y -= distance
 
       def update(self):
-            if self.rect.x > width:
+            if self.rect.x > game_menu.SCREEN_WIDTH:
                   self.rect.x = -50  
             elif self.rect.x < -50:
-                  self.rect.x = width
+                  self.rect.x = game_menu.SCREEN_WIDTH
 
-            if self.rect.y > height:
+            if self.rect.y > game_menu.SCREEN_HEIGHT:
                   self.rect.y = -50  
             elif self.rect.y < -50:
-                  self.rect.y = height
+                  self.rect.y = game_menu.SCREEN_HEIGHT
 
