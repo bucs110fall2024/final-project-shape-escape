@@ -1,8 +1,6 @@
 import pygame
-from Player import Triangle
-from Square import Square
-import game_menu
-from Bullet import Bullet
+from player import Player
+from obstacle import Obstacle
 import random
 
 class Controller:
@@ -11,7 +9,7 @@ class Controller:
         screen = pygame.display.set_mode((800,400)) #creates the screen with ((width, height))
         pygame.display.set_caption("My First Game") #names game screen tab
         clock = pygame.time.Clock() #creates a clock to establish time in the game
-        test_font = pygame.font.Font("font/Pixeltype.ttf", 50)#creates font with (font_type, size)
+        test_font = pygame.font.Font("assets/Pixeltype.ttf", 50)#creates font with (font_type, size)
         game_active = False
         start_time = 0
         score = 0

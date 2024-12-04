@@ -4,6 +4,6 @@ from controller import Controller
 def main():
     controller = Controller()
     controller.mainloop()
-    p1 = Player()
+    player = Player()
 
 main()
