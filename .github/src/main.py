@@ -1,5 +1,5 @@
-from player import Player
-from controller import Controller
+from src.player import Player
+from src.controller import Controller
 
 def main():
     controller = Controller()
