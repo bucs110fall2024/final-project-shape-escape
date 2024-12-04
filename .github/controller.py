@@ -9,7 +9,7 @@ class Controller:
         screen = pygame.display.set_mode((800,400)) #creates the screen with ((width, height))
         pygame.display.set_caption("My First Game") #names game screen tab
         clock = pygame.time.Clock() #creates a clock to establish time in the game
-        test_font = pygame.font.Font("assets/Pixeltype.ttf", 50)#creates font with (font_type, size)
+        #test_font = pygame.font.Font("assets/Pixeltype.ttf", 50)#creates font with (font_type, size)
         game_active = False
         start_time = 0
         score = 0
@@ -29,10 +29,10 @@ class Controller:
         player_stand = pygame.transform.rotozoom(player_stand, 0, 2) #transforms the surface (surface, rotate, scale)
         player_stand_rect = player_stand.get_rect(center = (400,200))
 
-        game_name = test_font.render("Shape Escape", False, (111,196,169))
+        game_name = none.render("Shape Escape", False, (111,196,169))
         game_name_rect = game_name.get_rect(center = (400,80))
 
-        game_message = test_font.render("Press Space To Run", False, (111,196,169))
+        game_message = none.render("Press Space To Run", False, (111,196,169))
         game_message_rect = game_message.get_rect(center = (400,320))
 
         # Timer
@@ -42,7 +42,7 @@ class Controller:
     def display_score():
 
         current_time = int((pygame.time.get_ticks()/100) - start_time)# gives time in milliseconds
-        score_num_surf = test_font.render(f"Score: {current_time}", False, (64, 64, 64))
+        score_num_surf = none.render(f"Score: {current_time}", False, (64, 64, 64))
         score_num_rect = score_num_surf.get_rect(center = (400, 50))
         pygame.draw.rect(screen, "#c0e8ec", score_num_rect)
         screen.blit(score_num_surf, score_num_rect)
@@ -102,7 +102,7 @@ class Controller:
                 screen.fill((94, 129, 162)) 
                 screen.blit(player_stand, player_stand_rect)
 
-                score_message = test_font.render(f"your score: {score}", False, (111, 196, 169))
+                score_message = none.render(f"your score: {score}", False, (111, 196, 169))
                 score_message_rect = score_message.get_rect(center=(400,330))
 
                 screen.blit(game_name, game_name_rect)

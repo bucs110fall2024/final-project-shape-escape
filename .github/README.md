@@ -25,3 +25,53 @@ game_menu.py has a class to introduce the player to the game while having differ
 Player.py has a class of Triangle and this acts like the player where you are able to control him and dodge the bullets
 
 Square.py has a class of Square, squares are used as the enemies in Shape Escape and this has all their properties and their ability to shoot bullets
+
+Test Case 1: Player Movement
+
+Test Description: Verify that the player’s jump is moving as expected
+Test Steps:
+Start the game.
+Press Spacebar
+Verify that the player is moving up
+Verify that the player also falls if they didn’t input jump
+Expected Outcome: The player should be able to jump up and fall down when they don’t press a button.
+
+Test Case 2: Collision Detection
+
+Test Description: Ensure that collisions between the player and the shapes
+Test Steps:
+Start the game.
+Jump and come in contact with the enemy
+Verify that the player loses
+Expected Outcome: The Player should lose when it comes in contact with the enemy
+
+Test Case 3: Game Over Condition
+
+Test Description: Confirm that the game ends when the player comes in contact with the enemy
+Test Steps:
+Start the game.
+Jump into one of the moving shapes
+Verify that the game displays a "Game Over" message.
+Verify that the game also shows the score you’ve received at the end
+Expected Outcome: The game should display a "Game Over" message with the score you’ve achieved when the player loses in the game
+
+Test Case 4: Boundaries
+
+Test Description: Confirm that the player dies when coming in contact with the floor and hits a barrier when touching the top
+Test Steps:
+Start the game.
+Jump in the max height on the screen
+Verify that the player hits the top and no longer can go higher
+Fall into the bottom of the screen
+Verify once the player makes contact with the floor, it results into a game over
+Expected Outcome: The player should die when in contact with the floor and can’t go past the top of the screen
+
+Test Case 5: The Score
+
+Test Description: Verify the score would change depending on how long you stay in the level
+Test Steps:
+Start the game.
+Play the game for 10 seconds
+Verify the score is going up during the duration of you playing
+Verify that the program is accurately displaying the score you’ve received upon death
+Expected Outcome: The program should display the score once you die
