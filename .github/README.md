@@ -3,8 +3,8 @@ Team Members
     - Jordanny Ramos Rodriguez
 
 Project Description
-    We plan to create a game similar to pacman but with shapes instead called shape escape. We will likely try to include different stages and weapons or power ups. The user plays as a triangle and tries to dodge bullets from squares and other shapes.
-
+    A game simliar where a square jumps to aviod other shapes that are trying to get them. While also avioding the obsolcles in their way like flappy bird.
+    
 GUI Design - Initial Design
 
 The Picture is in the assets foler.

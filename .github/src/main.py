@@ -1,9 +1,9 @@
-from Player import Player
-from controller import Controller
+from src.player import Player
+from src.controller import Controller
 
 def main():
     controller = Controller()
     controller.mainloop()
-    p1 = Player()
+    player = Player()
 
 main()
