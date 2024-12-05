@@ -21,7 +21,7 @@ class Controller:
 
         self.obstacle_group = pygame.sprite.Group()
 
-        self.sky_surf = pygame.image.load("final_project/assets/Sky.png").convert_alpha() #converts to file pygame can work with more easily
+        self.sky_surf = pygame.transform.scale_by(pygame.image.load("final_project/assets/Sky.jpeg").convert_alpha(), (0.4, 0.4))
 
         #intro screen
         self.player_stand = pygame.transform.scale_by(pygame.image.load("final_project/assets/triangle.png").convert_alpha(), (0.15, 0.15))
@@ -82,6 +82,7 @@ class Controller:
                 if self.game_active:
                     if event.type == self.obstacle_timer:
                         self.obstacle_group.add(Obstacle(random.choice(["square", "circle", "circle", "circle"])))
+
 
             if self.game_active: #only runs if the game is active and not over
                 self.screen.blit(self.sky_surf, (0,0))#puts one surface onto another (surface, position) #(0,0) for pygame is at the top left, not the middle or bottom left
