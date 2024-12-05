@@ -3,7 +3,7 @@ Team Members
     - Jordanny Ramos Rodriguez
 
 Project Description
-    A game where a square jumps to aviod other shapes that are trying to get them. While also avioding the obstacles in their way like flappy bird.
+    A game where a triangle jumps to aviod other shapes that are trying to get them. While also avioding the obstacles in their way like flappy bird.
 
 GUI Design - Initial Design
 
