@@ -57,14 +57,14 @@ Expected Outcome: The game should display a "Game Over" message with the score y
 
 Test Case 4: Boundaries
 
-Test Description: Confirm that the player dies when coming in contact with the floor and hits a barrier when touching the top
+Test Description: Confirm that the player does not fall off or jump over the screen
 Test Steps:
 Start the game.
 Jump in the max height on the screen
 Verify that the player hits the top and no longer can go higher
 Fall into the bottom of the screen
-Verify once the player makes contact with the floor, it results into a game over
-Expected Outcome: The player should die when in contact with the floor and can’t go past the top of the screen
+Verify once the player makes contact with the floor and does not fall through the screen
+Expected Outcome: The player should not die or fall through the screen upon hitting the roof or the floor
 
 Test Case 5: The Score
 
