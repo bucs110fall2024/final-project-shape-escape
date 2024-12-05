@@ -1,10 +1,11 @@
 import pygame
+import src
 
 class Player(pygame.sprite.Sprite):
     def __init__(self):       
         super().__init__()
-        self.player_walk = pygame.image.load("assets/triangle.png").convert_alpha()       
-        self.image = self.player_walk[self.player_index]
+        self.player_walk = pygame.transform.scale_by(pygame.image.load("final_project/assets/triangle.png").convert_alpha(), (0.15, 0.15))     
+        self.image = self.player_walk
         self.rect = self.image.get_rect(midbottom=(80, 300))
         self.gravity = 0
 

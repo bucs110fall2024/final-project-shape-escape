@@ -21,11 +21,10 @@ class Controller:
 
         self.obstacle_group = pygame.sprite.Group()
 
-        self.sky_surf = pygame.image.load("assets/Sky.png").convert() #converts to file pygame can work with more easily
+        self.sky_surf = pygame.image.load("final_project/assets/Sky.png").convert_alpha() #converts to file pygame can work with more easily
 
         #intro screen
-        self.player_stand = pygame.image.load("assets/triangle.png").convert_alpha()
-        self.player_stand = pygame.transform.rotozoom(self.player_stand, 0, 2) #transforms the surface (surface, rotate, scale)
+        self.player_stand = pygame.transform.scale_by(pygame.image.load("final_project/assets/triangle.png").convert_alpha(), (0.15, 0.15))
         self.player_stand_rect = self.player_stand.get_rect(center = (400,200))
 
         self.game_name = self.none.render("Shape Escape", False, (111,196,169))
